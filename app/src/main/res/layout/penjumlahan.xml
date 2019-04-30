@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bilanganpertama"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:id="@+id/bilanganSatu"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bilangankedua"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:id="@+id/bilanganDua"
+        android:layout_margin="10dp"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hasil"
+        android:layout_marginStart="10dp"
+        android:id="@+id/jumlah"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasil"
+        android:inputType="number"
+        android:hint="@string/hasil"
+        android:layout_margin="10dp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>

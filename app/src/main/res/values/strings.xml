@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ProgrammingMaster</string>
     <string name="coba">Coba</string>
+    <string name="bilanganpertama">Bilangan Pertama</string>
+    <string name="bilangankedua">Bilangan Kedua</string>
+    <string name="hasil">Hasil</string>
 </resources>
