@@ -4,4 +4,8 @@
     <string name="bilanganpertama">Bilangan Pertama</string>
     <string name="bilangankedua">Bilangan Kedua</string>
     <string name="hasil">Hasil</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
 </resources>
