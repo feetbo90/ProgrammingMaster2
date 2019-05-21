@@ -1,5 +1,6 @@
 package master.programming.programmingmaster
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -19,10 +20,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.penjumlahan)
 
-        val intent = getIntent()!!.extras
+        val intent = intent!!.extras
 
         username = intent!!.getString("username", "")
-        pass = intent!!.getString("password", "")
+        pass = intent.getString("password", "")
 
         Toast.makeText(applicationContext, "ini username : $username", Toast.LENGTH_LONG).show()
 
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
                 hasil.setText("$has")
 
             }
+        }
+
+        button2.setOnClickListener {
+            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+            finish()
         }
     }
 

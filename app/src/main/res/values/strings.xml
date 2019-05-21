@@ -9,4 +9,15 @@
     <string name="password">Password</string>
     <string name="signin">Sign In</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="yes_message">Yes Message</string>
+    <string name="no_message">No Message</string>
+    <string name="tekan">Tekan</string>
+    <string name="tekanDariActivity">Dari Activity</string>
+    <string name="close">Close</string>
+    <string name="open">Open Button</string>
+
 </resources>
