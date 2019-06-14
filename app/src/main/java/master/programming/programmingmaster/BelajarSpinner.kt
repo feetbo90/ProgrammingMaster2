@@ -31,5 +31,23 @@ class BelajarSpinner : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
         spinner.onItemSelectedListener = this
+
+
+        // cara II
+
+        val spinner2 = findViewById<Spinner>(R.id.spinner2)
+        val list = mutableListOf<String>("AC Milan", "Real Madrid", "Chelsea")
+        val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, list)
+        spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                Toast.makeText(applicationContext, "$parent.getItemAtPosition(position)", Toast.LENGTH_LONG)
+            }
+
+        }
+
     }
 }
