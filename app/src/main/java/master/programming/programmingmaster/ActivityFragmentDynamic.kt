@@ -10,7 +10,7 @@ class ActivityFragmentDynamic : AppCompatActivity() {
 
     private var isFragmentDisplayed = false
 
-    private val STATE_FRAGMENT = "state_of_fragment"
+    private val STATEFRAGMENT = "stateOfFragment"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +18,7 @@ class ActivityFragmentDynamic : AppCompatActivity() {
 
         if (savedInstanceState != null) {
             isFragmentDisplayed =
-                    savedInstanceState.getBoolean(STATE_FRAGMENT)
+                    savedInstanceState.getBoolean(STATEFRAGMENT)
             if (isFragmentDisplayed) {
                 // If the fragment is displayed, change button to "close".
                 button.setText(R.string.close)
@@ -76,7 +76,7 @@ class ActivityFragmentDynamic : AppCompatActivity() {
 
     public override fun onSaveInstanceState(savedInstanceState: Bundle) {
         // Save the state of the fragment (true=open, false=closed).
-        savedInstanceState.putBoolean(STATE_FRAGMENT, isFragmentDisplayed)
+        savedInstanceState.putBoolean(STATEFRAGMENT, isFragmentDisplayed)
         super.onSaveInstanceState(savedInstanceState)
     }
 }
