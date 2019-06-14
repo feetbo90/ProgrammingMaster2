@@ -1,5 +1,6 @@
 package master.programming.programmingmaster
 
+import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,6 +15,7 @@ class BelajarSpinner : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     }
 
+    @SuppressLint("ShowToast")
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         Toast.makeText(applicationContext, "$parent.getItemAtPosition(position)", Toast.LENGTH_LONG)
     }
@@ -28,5 +30,6 @@ class BelajarSpinner : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
+        spinner.onItemSelectedListener = this
     }
 }
