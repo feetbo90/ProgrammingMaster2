@@ -20,7 +20,8 @@
         <activity android:name=".SharedPreferencesExample" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".BelajarFragment" />
-        <activity android:name=".ActivityFragmentDynamic"/>
+        <activity android:name=".ActivityFragmentDynamic" />
+        <activity android:name=".RadioGroupActivity"></activity>
     </application>
 
 </manifest>

@@ -19,6 +19,10 @@
     <string name="tekanDariActivity">Dari Activity</string>
     <string name="close">Close</string>
     <string name="open">Open Button</string>
+    <string name="pirates">Pirates</string>
+    <string name="ninjas">Ninjas</string>
+    <string name="developer">Developer</string>
+    <string name="programmer">Programmer</string>
 
     <string-array name="planets_array">
         <item>Mercury</item>
