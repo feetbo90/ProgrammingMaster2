@@ -23,6 +23,8 @@
     <string name="ninjas">Ninjas</string>
     <string name="developer">Developer</string>
     <string name="programmer">Programmer</string>
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
 
     <string-array name="planets_array">
         <item>Mercury</item>

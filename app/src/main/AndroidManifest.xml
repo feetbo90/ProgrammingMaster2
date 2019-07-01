@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BelajarSpinner">
+        <activity android:name=".CustomList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".BelajarFragment" />
         <activity android:name=".ActivityFragmentDynamic" />
-        <activity android:name=".RadioGroupActivity"></activity>
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".BelajarSpinner"/>
     </application>
 
 </manifest>
