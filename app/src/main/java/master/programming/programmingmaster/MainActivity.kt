@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.penjumlahan.*
+import master.programming.programmingmaster.model.Buah
+import master.programming.programmingmaster.network.RestClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.penjumlahan)
 
         val intent = intent!!.extras
+
+
+
 
         username = intent!!.getString("username", "")
         pass = intent.getString("password", "")

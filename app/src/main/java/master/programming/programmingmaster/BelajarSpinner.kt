@@ -2,11 +2,17 @@ package master.programming.programmingmaster
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
+import master.programming.programmingmaster.model.Buah
+import master.programming.programmingmaster.network.RestClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class BelajarSpinner : AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -26,6 +32,31 @@ class BelajarSpinner : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_belajar_spinner)
+
+
+        /*
+           ambil data dengan retrofit
+
+        */
+        val getData = RestClient.DataRepository.creating()
+        getData.ambilData().enqueue(object : Callback<Buah> {
+            override fun onFailure(call: Call<Buah>, t: Throwable) {
+
+            }
+
+            override fun onResponse(call: Call<Buah>, response: Response<Buah>) {
+                val data = response.body()
+                //Toast.makeText(applicationContext, data!!.fruit, Toast.LENGTH_LONG).show()
+                Log.d("ini data ", ""+data!!.fruit)
+            }
+
+        })
+
+
+
+
+
+
 
         val spinner = findViewById<Spinner>(R.id.planets_spinner)
 
